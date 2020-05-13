@@ -1,0 +1,12 @@
+"""This program was created by Emily Lindsey in IS 204 for assignment one.
+This program will allow the user to input information about their vehicle, and calculate
+the vehicles fuel mileage"""
+
+carMake = input("Enter car make: ") #during lines 5-9 the user will be prompted to enter their vehicle information
+carModelYear = input("Enter car model year: ")
+carModel = input("Enter car model: ")
+miles_lastTrip = float(input("Enter number of miles driven during last trip: ")) #the float command is used to denote the possible use of decimals
+fuel_lastTrip = float(input("Enter amount of fuel used on the last trip (gallons): "))
+fuelMileage = round((float(miles_lastTrip)/ float(fuel_lastTrip)),2) #the fuel mileage is calculated and rounded to the nearest second decimal
+print(carMake + ' ' + carModelYear + ' ' + carModel) #print the users information
+print("Fuel Mileage: " + str(fuelMileage)) #prints total fuel mileage
